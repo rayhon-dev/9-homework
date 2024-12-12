@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ travel.destination_name }}</title>
+</head>
+<body>
+    <h1>{{ travel.destination_name }}</h1>
+    <button><a href="{% url 'travel:list' %}">Back to Travel List</a></button>
+    <button><a href="{{ travel.get_update_url }}">Update</a></button>
+    <h3>Country: {{ travel.country }}</h3>
+    <h3>Description: {{ travel.description }}</h3>
+    <h3>Popular Season: {{ travel.popular_season }}</h3>
+    <button><a href="{{ travel.get_delete_url }}">Delete</a></button>
+</body>
+</html>
+
+
+
+
+

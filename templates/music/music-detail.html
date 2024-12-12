@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ music.album_title }}</title>
+</head>
+<body>
+    <h1>{{ music.album_title }}</h1>
+    <button><a href="{% url 'music:list' %}">Back to Music List</a></button>
+    <button><a href="{{ music.get_update_url }}">Update</a></button>
+    <h3>Artist: {{ music.artist }}</h3>
+    <h3>Release year: {{ music.release_year }}</h3>
+    <h3>Genre: {{ music.genre }}</h3>
+    <button><a href="{{ music.get_delete_url }}">Delete</a></button>
+</body>
+</html>
+
+
+
+
+
